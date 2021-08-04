@@ -1,0 +1,56 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+.obj-screen {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.obj-box {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    margin: 10px;
+    p {
+        width: 80px;
+    }
+    input {
+        width: calc(100% - 80px);
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #f1f1f1;
+    }
+}
+.add-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background: green;
+    color: white;
+}
+.bind-btn {
+    background: #3880ff;
+    width: 70%;
+    height: 40px;
+    margin-left: calc(15% - 10px);
+    border-radius: 5px;
+    color: white;
+}
+.result-box {
+    padding: 10px;
+    :nth-child(1) {
+        margin: 5px 0;
+    }
+}
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    div {
+        width: 50%;
+        height: 40px;
+    }
+}

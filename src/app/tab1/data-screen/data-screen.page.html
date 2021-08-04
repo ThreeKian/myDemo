@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>数据处理</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div style="padding-left: 10px;">
+      2个属性绑定
+      <div class="obj-screen" *ngFor="let item of objList;let i = index">
+        <div>
+          <div class="obj-box">
+            <p>对象{{i + 1}}</p>
+            <input type="text" [(ngModel)]="item.obj">
+          </div>
+          <div class="obj-box">
+            <p>对应值{{i + 1}}</p>
+            <input type="text" [(ngModel)]="item.value">
+          </div>
+        </div>
+        <button class="add-btn" (click)="addObj()" *ngIf="i == 0">添加</button>
+      </div>
+      <button class="bind-btn" (click)="bind()">绑定</button>
+    </div>
+    <div class="result-box">
+      <p>结果：</p>
+      <div class="result" *ngFor="let item of objList">
+        <div class="flex">
+          <p>{{item.data[item.obj]}}：</p>
+          <p>{{item.data[item.value]}}</p>
+        </div>
+        <div class="flex">
+          <p>{{item.data[item.value]}}：</p>
+          <p>{{item.data[item.obj]}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

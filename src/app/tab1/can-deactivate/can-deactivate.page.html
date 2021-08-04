@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>路由守卫</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div style="display: flex;margin: 10px 10px;height: 30px;line-height: 30px;">
+    <div>是否允许返回：</div>
+    <div style="width: 40px;height: 30px;color: white;line-height: 30px;text-align: center;" (click)="change()"
+    [ngStyle]="{'background': canLeave === 1 ? 'green' : 'red'}">
+      {{canLeave === 1 ?'是' : '否'}}
+    </div>
+  </div>
+</ion-content>

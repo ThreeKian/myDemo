@@ -1,0 +1,15 @@
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+      Demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="display: flex;flex-wrap: wrap;">
+    <div *ngFor="let item of items" class="item" [ngStyle]="{'background': item.bgColor}" routerLink="/{{item.url}}">
+      {{item.name}}
+    </div>
+  </div>
+</ion-content>

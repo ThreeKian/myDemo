@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>扫码</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="input">
+    <input type="text" style="width: 99%;margin-left: 1%;" [(ngModel)]="AreaID" (click)="showScan()">
+  </div>
+</ion-content>

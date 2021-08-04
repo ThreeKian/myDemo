@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>数组归类后排序</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>处理前数组</div>
+  <ul style="padding-left: 0;">
+    <li *ngFor="let item of res.data" style="background: rgb(168, 227, 255);list-style-type:none;border-bottom: 1px solid white;">
+      <div style="height: 30px;margin-left: 10px;">
+        <span style="line-height: 30px;color: #333;">{{item.name}}</span>
+        <span style="line-height: 30px;margin-left: 15px;color: #333;">{{item.value}}</span>
+      </div>
+      <div style="line-height: 30px;color: #333;margin-left: 10px;">{{item.pid}}</div>
+    </li>
+  </ul>
+  <div>处理后数组</div>
+  <ul style="padding-left: 0;">
+    <li *ngFor="let item of Deptist" style="background: rgb(255, 168, 190);list-style-type:none;border-bottom: 1px solid white;">
+      <div style="height: 30px;margin-left: 10px;">
+        <span style="line-height: 30px;color: #333;">{{item.name}}</span>
+        <span style="line-height: 30px;margin-left: 15px;color: #333;">{{item.value}}</span>
+      </div>
+      <div style="line-height: 30px;color: #333;margin-left: 10px;">{{item.pid}}</div>
+    </li>
+  </ul>
+</ion-content>

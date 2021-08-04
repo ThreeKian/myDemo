@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>数组归类</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="input" *ngIf="showInput">
+    <input type="text" style="width: 99%;margin-left: 1%;" [(ngModel)]="checkAreaName" (click)="showAreaList()">
+  </div>
+  <ul *ngIf="!showInput">
+    <li *ngFor = "let item of showList" (click)="onAreaClick(item)">
+      <span>   {{item.areaName}}</span>
+    </li>
+  </ul>
+</ion-content>

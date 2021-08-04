@@ -1,0 +1,68 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+  .app-common-bg {
+    width: 100%;
+    height: 260px;
+  }
+  .calendar-table-item {
+    padding: 5px;
+    width: 14.28%;
+    float: left;
+    text-align: center;
+  }
+  
+  .calendar-table-riqi {
+    padding: 2px 5px;
+    width: 14.28%;
+    float: left;
+    text-align: center;
+  }
+  
+  .calendar-table-day {
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid white;
+    height: 30px;
+    width: 100%;
+    padding: 4px;
+  }
+  
+  .workCalendar {
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .12);
+    -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, .12);
+    margin-top: 15rem;
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+  
+  .choosedDay {
+    color: white;
+    background: #2a77bc;
+    border-radius: 15px;
+  }
+  
+  .jt {
+    width: 24px;
+    margin: 3px 2px 0 2px;
+  }
+  .currentDay {
+    color: white;
+    background: #FF6680;
+    border-radius: 15px;
+  }
+  .homing {
+    width: 60%;
+    margin-left: 20%;
+    height: 35px;
+    border-radius: 5px;
+    background: #2a77bc;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+  }

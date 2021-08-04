@@ -1,0 +1,7 @@
+{
+  "name": "myIonicDemo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
